@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <main>
+
+        <span id="title">GERADOR DE SENHA</span>
+        <p>Tamanho <span id="valor">15</span> caracteres</p>
+        <input type="range" id="slider" class="slider" min="5" max="25" value="15">
+        <button id="button">Gerar senha</button>
+
+    </main>
+
+    <div class="generated-password hide">
+
+        <span>Sua senha gerada foi:</span>
+        <span id="password">teste de senha gerada</span>
+        <span id="copy">Clique na senha para copiar.</span>
+
+    </div>
+    
+</body>
+</html>
