@@ -4,7 +4,6 @@ let button = document.querySelector('#button')
 
 let container = document.querySelector('.generated-password')
 let password = document.querySelector('#password')
-let copy = document.querySelector('#copy')
 
 let charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_-+=<>?/.,:;{}[]|\\`~ '
 
