@@ -1,0 +1,12 @@
+@media screen and (min-width: 1024px) {
+    #copy {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s; 
+    }
+
+    .generated-password:hover #copy {
+        visibility: visible;
+        opacity: 1;
+    }
+}

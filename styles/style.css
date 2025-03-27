@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --fs-body: 1.6rem;
+    --ff-primary: "Darumadrop One", sans-serif; 
+    --ff-secondary: "JetBrains Mono", monospace;
+    --ff-tertiary: "Tomorrow", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../images/ceu.png);
+    background-size: contain;
+    font-size: var(--fs-body);
+    font-family: var(--ff-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    font-family: var(--ff-primary);
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: green;
+    text-shadow: 1px 2px #063228;
+}
+
+main p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #fff;
+    height: 0.05rem;
+    border-radius: 5rem;
+    background: transparent;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: linear-gradient(to bottom, green, rgb(0, 23, 128));
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 3px rgba(0, 41, 10, 0.808);
+}
+
+.slider::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: linear-gradient(to bottom, green, rgb(0, 23, 128));
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 3px rgba(0, 41, 10, 0.808);
+}
+
+#button {
+    height: 4rem;
+    width: 100%;
+    font-family: var(--ff-secondary);
+    font-size: 1.4rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient(360deg, rgba(0, 128, 0, 0.774), blue);;
+    cursor: pointer;
+}
+
+#button:hover {
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.267);
+}
+
+.generated-password {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#password {
+    font-size: 2rem;
+    font-family: var(--ff-tertiary);
+    padding: 1.6rem;
+    min-width: 30rem;
+    border: 1px solid rgba(0, 128, 0, 0.205);
+    border-radius: 0.5rem;
+    background: rgb(37, 29, 29);
+    cursor: pointer;
+}
+
+#password:hover {
+    transform: scale(1.1);
+}
+
+#copy {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid rgba(141, 12, 12, 0.39);
+    border-radius: 0.5rem;
+    background: rgb(37, 29, 29);
+}
+
+/* .generated-password:hover #copy {
+    visibility: visible;
+    opacity: 1;
+} */
+
+.hide {
+    display: none;
+}
