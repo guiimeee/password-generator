@@ -34,7 +34,7 @@ main {
     align-items: center;
 }
 
-#title {
+#logo {
     font-family: var(--ff-primary);
     font-size: 3.5rem;
     font-weight: bold;
@@ -82,13 +82,64 @@ main p {
 
 #button {
     height: 4rem;
-    width: 28rem;
+    width: 100%;
     font-family: var(--ff-secondary);
     font-size: 1.4rem;
     color: white;
     border: none;
     border-radius: 0.5rem;
-    background: linear-gradient(360deg, #ffb30073, blue);;
+    background: linear-gradient(360deg, rgba(0, 128, 0, 0.774), blue);;
+    cursor: pointer;
+}
+
+#button:hover {
+    /* background: linear-gradient(360deg, rgba(0, 100, 0, 0.774), rgb(0, 0, 185)); */
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.267);
+}
+
+.generated-password {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#password {
+    font-size: 2rem;
+    font-family: var(--ff-tertiary);
+    padding: 1.6rem;
+    min-width: 30rem;
+    border: 1px solid rgba(0, 128, 0, 0.205);
+    border-radius: 0.5rem;
+    background: rgb(37, 29, 29);
+    cursor: pointer;
+}
+
+#password:hover {
+    transform: scale(1.1);
+}
+
+#copy {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid rgba(141, 12, 12, 0.39);
+    border-radius: 0.5rem;
+    background: rgb(37, 29, 29);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.generated-password:hover #copy {
+    visibility: visible;
+    opacity: 1;
 }
 
 .hide {
